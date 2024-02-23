@@ -24,10 +24,10 @@ Then, given that this local YAML representation of the SSM Parameter Store state
 Requires Python >= 3.3
 
 ```
-pip install ssm-diff
+pip install 'ssm-diff @ git+https://github.com/apicht/ssm-diff'
 ```
 
-## Geting Started
+## Getting Started
 The tool relies on native AWS SDK, thus, on a way SDK [figures out](http://boto3.readthedocs.io/en/latest/guide/configuration.html) an effective AWS configuration. You might want to configure it explicitly, setting `AWS_DEFAULT_REGION`, or `AWS_PROFILE`, before doing and manipulations on parameters
 
 When `AWS_PROFILE` environment variable is set, local state file will have a name corresponding to the profile name.
