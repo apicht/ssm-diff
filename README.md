@@ -1,5 +1,7 @@
 # ssm-diff
 
+Forked from https://github.com/runtheops/ssm-diff
+
 AWS [SSM Parameter Store](https://aws.amazon.com/ec2/systems-manager/parameter-store) is a really convenient, AWS-native, KMS-enabled storage for parameters and secrets. 
 
 Unfortunately, as of now, it doesn't seem to provide any human-friendly ways of batch-managing [hierarchies of parameters](http://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-working.html#sysman-paramstore-su-organize).
@@ -18,6 +20,9 @@ Then, given that this local YAML representation of the SSM Parameter Store state
 `ssm-diff` supports complex data types as values and can operate within single or multiple prefixes.
 
 ## Installation
+
+Requires Python >= 3.3
+
 ```
 pip install ssm-diff
 ```
